@@ -1,0 +1,9 @@
+<component name="NavigationController" extends="Node">
+    <script type="text/brightscript" uri="NavigationController.brs" />
+    <interface>
+       <function name="setStackNavigatorReference" /> 
+
+       <function name="goToScreen" />
+       <function name="goToPreviousScreen" />
+    </interface>
+</component>

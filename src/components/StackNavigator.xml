@@ -1,0 +1,7 @@
+<component name="StackNavigator" extends="Scene">
+    <script type="text/brightscript" uri="StackNavigator.brs" />
+    <interface>
+        <function name="pushScreen" />
+        <function name="popScreen" />
+    </interface>
+</component>
