@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "brightscript",
+            "request": "launch",
+            "stopOnEntry": false,
+            "enableDebuggerAutoRecovery": false,
+            "stopDebuggerOnAppExit": false,
+            "rendezvousTracking": false,
+            "rootDir": "${workspaceFolder}/src",
+            "files": [
+                "source/**/*",
+                "components/**/*",
+                "images/**/*",
+                "fonts/**/*",
+                "manifest"
+            ],
+            "name": "Launch stack-navigator-example"
+        }
+    ]
+}
