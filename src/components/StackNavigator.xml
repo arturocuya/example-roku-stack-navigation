@@ -3,5 +3,6 @@
     <interface>
         <function name="pushScreen" />
         <function name="popScreen" />
+        <function name="initialize" />
     </interface>
 </component>

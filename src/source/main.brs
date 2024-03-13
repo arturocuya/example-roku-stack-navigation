@@ -5,7 +5,10 @@ sub main(args)
     m.global = screen.getGlobalNode()
 
     stackNavigator = screen.CreateScene("StackNavigator")
+    ? "b", stackNavigator
     screen.show()
+
+    ' vscode_rdb_on_device_component_entry
 
     stackNavigator.callFunc("initialize", args.contentId)
 

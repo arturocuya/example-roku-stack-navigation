@@ -19,10 +19,10 @@ function goToScreen(screenName as string, props = invalid as dynamic) as boolean
     return m.stackNavigator.callFunc("pushScreen", screenName, props)
 end function
 
-function goToPreviousScreen(screenName as string, prevScreenProps = invalid as dynamic) as boolean
+function goToPreviousScreen(prevScreenProps = invalid as dynamic) as boolean
     if (m.stackNavigator = invalid)
         return false
     end if
 
-    return m.stackNavigator.callFunc("popScreen", screenName, prevScreenProps)
+    return m.stackNavigator.callFunc("popScreen", prevScreenProps)
 end function

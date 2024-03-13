@@ -1,0 +1,10 @@
+<component name="MainScreen" extends="Group">
+    <script type="text/brightscript" uri="MainScreen.brs" />
+    <children>
+        <Label text="Main screen" translation="[100, 60]" />
+        <Label text="Press Play/Pause to generate random props" translation="[100, 100]"/>
+        <Label id="propsLabel" translation="[100, 180]" />
+
+        <ButtonGroup id="buttonGroup" translation="[100, 230]"/>
+    </children>
+</component>

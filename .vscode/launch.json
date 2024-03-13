@@ -16,7 +16,8 @@
                 "fonts/**/*",
                 "manifest"
             ],
-            "name": "Launch stack-navigator-example"
+            "name": "Launch stack-navigator-example",
+            "injectRdbOnDeviceComponent": true
         }
     ]
 }

@@ -9,15 +9,18 @@ sub initialize(deeplink = invalid as dynamic)
         return
     end if
 
+    ? "Initializing StackNavigator..."
+
     ' Register all the screens you'll make available
+    registerScreen("MainScreen")
     registerScreen("RedScreen")
+    registerScreen("GreenScreen")
     registerScreen("BlueScreen")
-    registerScreen("YellowScreen")
 
     if (deeplink <> invalid)
         pushScreen(deeplink)
     else
-        pushScreen("RedScreen")
+        pushScreen("MainScreen")
     end if
 
     m.initialized = true
@@ -41,9 +44,16 @@ sub registerScreen(id as string, name = invalid as dynamic)
 end sub
 
 function pushScreen(name as string, props = invalid as dynamic) as boolean
+    currentScreen = m.screenStack.peek()
+
     ' Avoid pushing the same screen twice
-    if (m.screenStack.peek() = name)
+    if (currentScreen = name)
         return false
+    end if
+
+    ' Hide the current screen
+    if (currentScreen <> invalid)
+        m.top.findNode(m.screenMap[currentScreen]).visible = false
     end if
 
     ' This assumes that all the screens in the map are children of the main scene.
@@ -54,6 +64,8 @@ function pushScreen(name as string, props = invalid as dynamic) as boolean
     end if
 
     screenNode.visible = true
+    screenNode.setFocus(true)
+
     m.screenStack.push(name)
     
     return true
@@ -79,6 +91,7 @@ function popScreen(prevScreenProps = invalid as dynamic) as boolean
     end if
 
     nextScreenNode.visible = true
+    nextScreenNode.setFocus(true)
 
     return true
 end function

@@ -1,0 +1,13 @@
+
+<component name="BaseColorScreen" extends="Group">
+    <script type="text/brightscript" uri="BaseColorScreen.brs" />
+    <interface>
+        <function name="setProps" />
+    </interface>
+    <children>
+        <Label id="titleLabel" text="Red Screen" translation="[100, 60]" />
+        <Rectangle id="colorRectangle" color="#FF0000" width="100" height="100" translation="[100, 100]" />
+        <Label id="propsLabel" text="Props: None" translation="[100, 200]" />
+        <Label text="Press back to return" translation="[100, 240]" />
+    </children>
+</component>
