@@ -2,6 +2,10 @@
 
 > This project was created using [`npx create-roku-app`](https://github.com/haystacknews/create-roku-app)
 
+# Reference
+
+Sample project for this post: https://www.arturocuya.com/posts/architecture-to-navigate-between-screens.mdx
+
 ## Before you start
 
 1. Open the `bsconfig.json` file and enter the password for your Roku device.
