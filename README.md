@@ -4,7 +4,7 @@
 
 # Reference
 
-Sample project for this post: https://www.arturocuya.com/posts/architecture-to-navigate-between-screens.mdx
+Sample project for this post: https://www.arturocuya.com/posts/architecture-to-navigate-between-screens
 
 ## Before you start
 
